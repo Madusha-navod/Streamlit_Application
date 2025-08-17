@@ -1,6 +1,10 @@
 # 🚢 Titanic Passenger Survival Prediction - ML App
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
+
 A comprehensive machine learning application for predicting passenger survival on the Titanic using Streamlit. This project demonstrates end-to-end ML workflow from data exploration to model deployment.
+
+**🚀 Ready for Streamlit Cloud Deployment!**
 
 ## 📋 Project Overview
 
@@ -49,6 +53,7 @@ This application provides an interactive interface to:
 - **Visualization**: Plotly, Matplotlib
 - **Model Persistence**: Joblib
 - **Language**: Python 3.7+
+- **Deployment**: Streamlit Cloud
 
 ## 📦 Installation & Setup
 
@@ -83,12 +88,50 @@ Place the following files in your project directory:
 
 ## 🚀 Usage
 
-### Running the Application
+### Local Development
 ```bash
 streamlit run app.py
 ```
 
 The app will open in your default web browser at `http://localhost:8501`
+
+## ☁️ Streamlit Cloud Deployment
+
+### Prerequisites for Cloud Deployment
+- GitHub repository with your code
+- Streamlit Cloud account (free tier available)
+
+### Deployment Steps
+
+1. **Push to GitHub**
+   ```bash
+   git add .
+   git commit -m "********"
+   git push origin main
+   ```
+
+2. **Connect to Streamlit Cloud**
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Sign in with GitHub
+   - Click "New app"
+   - Select your repository and branch
+   - Set the main file path to `app.py`
+   - Click "Deploy!"
+
+3. **Required Files for Cloud Deployment**
+   - ✅ `app.py` - Main application
+   - ✅ `requirements.txt` - Python dependencies
+   - ✅ `.streamlit/config.toml` - Streamlit configuration
+   - ✅ `packages.txt` - System dependencies (if needed)
+   - ✅ `train.csv` - Dataset (or upload via app)
+   - ✅ `passenger_survival_model.pkl` - Trained model
+
+### Cloud Deployment Benefits
+- **Global Access**: Share your app with anyone, anywhere
+- **Automatic Updates**: Deployments trigger on git pushes
+- **Scalability**: Handles multiple users simultaneously
+- **Free Tier**: No cost for basic usage
+- **Custom Domain**: Option to use your own domain
 
 ### First Time Setup
 1. **Upload Dataset**: Use the file uploader on the Home page to upload your `train.csv` file
@@ -213,3 +256,19 @@ Created as part of a machine learning project using:
 ---
 
 **Note**: This application is designed for educational and demonstration purposes. The Titanic dataset is historical and should be used for learning machine learning concepts rather than real-world predictions.
+
+---
+
+## 🚀 Quick Deployment Checklist
+
+Before deploying to Streamlit Cloud, ensure you have:
+
+- [ ] ✅ All required files in your repository
+- [ ] ✅ `requirements.txt` with proper version constraints
+- [ ] ✅ `.streamlit/config.toml` for configuration
+- [ ] ✅ `packages.txt` if system dependencies are needed
+- [ ] ✅ Dataset and model files accessible
+- [ ] ✅ GitHub repository set up and pushed
+- [ ] ✅ Streamlit Cloud account connected
+
+**Ready to deploy?** Follow the [Streamlit Cloud Deployment](#streamlit-cloud-deployment) section above!
